@@ -41,7 +41,7 @@
         kp_quote_excl: kp_quote_excl {
             compatible = "zmk,behavior-mod-morph";
             label = "KP_QUOTE_EXCL";
-            bindings = <&kp SINGLE_QUOTE>, <&kp EXCLAMATION>;
+            bindings = <&kp DOUBLE_QUOTES>, <&kp EXCLAMATION>;
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT|MOD_LSFT)>;
@@ -50,7 +50,7 @@
         kp_quote_qstm: kp_quote_qstm {
             compatible = "zmk,behavior-mod-morph";
             label = "KP_QUOTE_QSTM";
-            bindings = <&kp DOUBLE_QUOTES>, <&kp QUESTION>;
+            bindings = <&kp SINGLE_QUOTE>, <&kp QUESTION>;
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT|MOD_LSFT)>;
@@ -82,6 +82,24 @@
             #binding-cells = <0>;
             mods = <(MOD_RSFT|MOD_LSFT)>;
         };
+
+        kp_coma_semi: kp_coma_semi {
+            compatible = "zmk,behavior-mod-morph";
+            label = "KP_COMA_SEMI";
+            bindings = <&kp COMMA>, <&kp SEMI>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT|MOD_LSFT)>;
+        };
+
+        kp_hash_at: kp_hash_at {
+            compatible = "zmk,behavior-mod-morph";
+            label = "KP_HASH_AT";
+            bindings = <&kp POUND>, <&kp AT_SIGN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT|MOD_LSFT)>;
+        };
     };
 
     keymap {
@@ -97,10 +115,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&trans      &kp Q             &kp Y              &kp O         &kp U          &kp POUND    &kp X            &kp D          &kp L         &kp P          &kp Z       &trans
-&kp B       &hrml LALT C      &hrml LCTRL I      &hrml LGUI A  &hrml LSHFT E  &kp COMMA    &kp K            &hrmr RSHFT H  &hrmr RGUI T  &hrmr RCTRL N  &mt RALT S  &kp W
-&caps_word  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp FSLH      &kp PERIOD     &kp MINUS    &kp J            &kp M          &kp G         &kp F          &kp V       &caps_word
-                                                 &lt 1 ESC     &lt 2 SPACE    &lt 3 RET    &lt 4 BACKSPACE  &lt 5 R        &lt 6 TAB
+&trans      &kp Q           &kp Y           &kp O          &kp U          &kp_hash_at      &kp X            &kp D          &kp L         &kp P          &kp Z       &trans
+&kp B       &hrml LALT C    &hrml LCTRL I   &hrml LGUI A   &hrml LSHFT E  &kp_coma_semi    &kp K            &hrmr RSHFT H  &hrmr RGUI T  &hrmr RCTRL N  &mt RALT S  &kp W
+&caps_word  &kp_quote_qstm  &kp_quote_excl  &kp_fslh_astr  &kp_dot_coln   &kp_mins_plus    &kp J            &kp M          &kp G         &kp F          &kp V       &caps_word
+                                            &lt 1 ESC      &lt 2 SPACE    &lt 3 RET        &lt 4 BACKSPACE  &lt 5 R        &lt 6 TAB
             >;
         };
 
