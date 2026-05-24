@@ -151,10 +151,10 @@
 
         Program {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &kp GRAVE     &kp TILDE       &kp POUND  &kp AMPERSAND  &kp PIPE      &trans  &trans     &trans    &trans     &trans    &trans
+&trans  &kp PERCENT   &kp UNDERSCORE  &kp COLON  &kp EQUAL      &kp DOLLAR    &trans  &sk RSHFT  &sk RGUI  &sk RCTRL  &sk RALT  &trans
+&trans  &kp QUESTION  &kp EXCL        &kp ASTRK  &kp PLUS       &kp BSLH      &trans  &trans     &trans    &trans     &trans    &trans
+                                      &trans     &trans         &trans        &trans  &trans     &trans
             >;
         };
 
