@@ -106,7 +106,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "Default";
+            display-name = "Main";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
@@ -130,7 +130,7 @@
                              &trans    &trans     &trans    &trans  &trans                &trans
             >;
 
-            label = "Media";
+            label = "Misc";
         };
 
         Navigation {
@@ -141,7 +141,7 @@
                              &trans    &trans     &trans    &kp BSPC   &kp DEL        &kp TAB
             >;
 
-            label = "Navigation";
+            label = "Nav";
         };
 
         Data {
@@ -163,7 +163,7 @@
                                       &trans     &trans         &trans        &trans  &trans     &trans
             >;
 
-            label = "Program";
+            label = "Prgm";
         };
 
         Numbers {
@@ -174,7 +174,7 @@
                              &kp PERIOD  &kp N0  &kp COMMA     &trans  &trans     &trans
             >;
 
-            label = "Numbers";
+            label = "Num";
         };
 
         Function {
@@ -185,7 +185,7 @@
                          &trans  &trans  &trans     &trans  &trans     &trans
             >;
 
-            label = "Function";
+            label = "Func";
         };
     };
 };
