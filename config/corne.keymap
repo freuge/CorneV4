@@ -116,9 +116,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&trans      &kp Q           &kp Y           &kp O          &kp U          &kp_hash_at      &kp X            &kp D          &kp L         &kp P          &kp Z       &trans
-&kp B       &hrml LALT C    &hrml LCTRL I   &hrml LGUI A   &hrml LSHFT E  &kp_coma_semi    &kp K            &hrmr RSHFT H  &hrmr RGUI T  &hrmr RCTRL N  &mt RALT S  &kp W
-&caps_word  &kp_quote_qstm  &kp_quote_excl  &kp_fslh_astr  &kp_dot_coln   &kp_mins_plus    &kp J            &kp M          &kp G         &kp F          &kp V       &caps_word
+&trans      &kp Q           &kp Y           &kp O          &kp U          &kp_hash_at      &kp X            &kp D          &kp L         &kp P          &kp Z         &trans
+&kp B       &hrml LALT C    &hrml LCTRL I   &hrml LGUI A   &hrml LSHFT E  &kp_coma_semi    &kp K            &hrmr RSHFT H  &hrmr RGUI T  &hrmr RCTRL N  &hrmr RALT S  &kp W
+&caps_word  &kp_quote_qstm  &kp_quote_excl  &kp_fslh_astr  &kp_dot_coln   &kp_mins_plus    &kp J            &kp M          &kp G         &kp F          &kp V         &caps_word
                                             &lt 1 ESC      &lt 2 SPACE    &lt 3 RET        &lt 4 BACKSPACE  &lt 5 R        &lt 6 TAB
             >;
         };
