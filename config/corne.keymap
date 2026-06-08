@@ -43,67 +43,15 @@
             require-prior-idle-ms = <120>;
         };
 
-        kp_quote_excl: kp_quote_excl {
-            compatible = "zmk,behavior-mod-morph";
-            label = "KP_QUOTE_EXCL";
-            bindings = <&kp DOUBLE_QUOTES>, <&kp EXCLAMATION>;
+        ltr: ltr {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LTR";
+            bindings = <&mo>, <&key_repeat>;
 
-            #binding-cells = <0>;
-            mods = <(MOD_RSFT|MOD_LSFT)>;
-        };
-
-        kp_quote_qstm: kp_quote_qstm {
-            compatible = "zmk,behavior-mod-morph";
-            label = "KP_QUOTE_QSTM";
-            bindings = <&kp SINGLE_QUOTE>, <&kp QUESTION>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RSFT|MOD_LSFT)>;
-        };
-
-        kp_fslh_astr: kp_fslh_astr {
-            compatible = "zmk,behavior-mod-morph";
-            label = "KP_FSLH_ASTR";
-            bindings = <&kp FSLH>, <&kp ASTERISK>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RSFT|MOD_LSFT)>;
-        };
-
-        kp_dot_coln: kp_dot_coln {
-            compatible = "zmk,behavior-mod-morph";
-            label = "KP_DOT_COLN";
-            bindings = <&kp PERIOD>, <&kp COLON>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RSFT|MOD_LSFT)>;
-        };
-
-        kp_mins_plus: kp_mins_plus {
-            compatible = "zmk,behavior-mod-morph";
-            label = "KP_MINS_PLUS";
-            bindings = <&kp MINUS>, <&kp KP_PLUS>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RSFT|MOD_LSFT)>;
-        };
-
-        kp_coma_semi: kp_coma_semi {
-            compatible = "zmk,behavior-mod-morph";
-            label = "KP_COMA_SEMI";
-            bindings = <&kp COMMA>, <&kp SEMI>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RSFT|MOD_LSFT)>;
-        };
-
-        kp_hash_at: kp_hash_at {
-            compatible = "zmk,behavior-mod-morph";
-            label = "KP_HASH_AT";
-            bindings = <&kp POUND>, <&kp AT_SIGN>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RSFT|MOD_LSFT)>;
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            require-prior-idle-ms = <120>;
         };
     };
 
@@ -120,10 +68,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&trans      &kp Q           &kp Y           &kp O          &kp U          &kp_hash_at      &kp X            &kp L          &kp D         &kp P          &kp Z         &trans
-&kp B       &hrml LALT C    &hrml LCTRL I   &hrml LGUI A   &hrml LSHFT E  &kp_coma_semi    &kp K            &hrmr RSHFT H  &hrmr RGUI T  &hrmr RCTRL N  &hrmr RALT S  &kp W
-&caps_word  &kp_quote_qstm  &kp_quote_excl  &kp_fslh_astr  &kp_dot_coln   &kp_mins_plus    &kp J            &kp M          &kp G         &kp F          &kp V         &caps_word
-                                            &lt 1 ESC      &lt 2 SPACE    &lt 3 RET        &lt 4 BACKSPACE  &lt 5 R        &lt 6 TAB
+&trans  &trans        &kp W          &kp O         &kp U          &kp APOS      &kp F            &kp D          &kp P         &kp L          &trans        &trans
+&trans  &hrml LALT E  &hrml LCTRL I  &hrml LGUI A  &hrml LSHFT C  &kp G         &kp M            &hrmr RSHFT H  &hrmr RGUI N  &hrmr RCTRL S  &hrmr RALT T  &trans
+&trans  &kp J         &kp COMMA      &kp DOT       &kp Y          &kp X         &kp Q            &kp K          &kp B         &kp Z          &kp V         &trans
+                                     &lt 1 ESC     &lt 2 SPACE    &ltr 3 RET    &lt 4 BACKSPACE  &lt 5 R        &lt 6 RET
             >;
         };
 
