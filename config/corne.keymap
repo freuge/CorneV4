@@ -68,10 +68,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&trans  &trans        &kp W          &kp O         &kp U          &kp APOS      &kp F            &kp D          &kp P         &kp L          &trans        &trans
-&trans  &hrml LALT E  &hrml LCTRL I  &hrml LGUI A  &hrml LSHFT C  &kp G         &kp M            &hrmr RSHFT H  &hrmr RGUI N  &hrmr RCTRL S  &hrmr RALT T  &trans
-&trans  &kp J         &kp COMMA      &kp DOT       &kp Y          &kp X         &kp Q            &kp K          &kp B         &kp Z          &kp V         &trans
-                                     &lt 1 ESC     &lt 2 SPACE    &ltr 3 RET    &lt 4 BACKSPACE  &lt 5 R        &lt 6 RET
+&to 0      &kp FSLH      &kp U          &kp O         &kp W          &kp APOS      &kp F            &kp D          &kp P         &kp L          &kp SEMI      &to 7
+&kp TAB    &hrml LALT E  &hrml LCTRL I  &hrml LGUI A  &hrml LSHFT C  &kp G         &kp M            &hrmr RSHFT H  &hrmr RGUI N  &hrmr RCTRL S  &hrmr RALT T  &kp TAB
+&sk LSHFT  &kp J         &kp COMMA      &kp DOT       &kp Y          &kp X         &kp Q            &kp K          &kp B         &kp Z          &kp V         &sk LSHFT
+                                        &lt 1 ESC     &lt 2 SPACE    &ltr 3 RET    &lt 4 BACKSPACE  &lt 5 R        &lt 6 RET
             >;
         };
 
@@ -139,6 +139,16 @@
             >;
 
             label = "Func";
+        };
+
+        layer_7 {
+            display-name = "Main";
+            bindings = <
+&to 0      &kp FSLH      &kp U          &kp O         &kp W          &kp APOS      &kp F            &kp D          &kp P         &kp L          &kp SEMI      &trans
+&kp TAB    &hrml LALT E  &hrml LCTRL I  &hrml LGUI A  &hrml LSHFT C  &kp G         &kp M            &hrmr RSHFT H  &hrmr RGUI N  &hrmr RCTRL S  &hrmr RALT T  &kp TAB
+&kp LCTRL  &kp J         &kp COMMA      &kp DOT       &kp Y          &kp X         &kp Q            &kp K          &kp B         &kp Z          &kp V         &kp RCTRL
+                                        &lt 1 ESC     &lt 2 SPACE    &ltr 3 RET    &lt 4 BACKSPACE  &lt 5 R        &lt 6 RET
+            >;
         };
     };
 };
