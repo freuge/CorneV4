@@ -84,7 +84,7 @@
 &kp ESC        &kp COMMA     &kp U          &kp O         &kp B          &kp SEMI      &kp J            &kp W          &kp L         &kp D          &kp F         &to 6
 &mt LCTRL TAB  &hrml LALT I  &hrml LCTRL E  &hrml LGUI A  &hrml LSHFT N  &kp Q         &kp Y            &hrmr RSHFT C  &hrmr RGUI H  &hrmr RCTRL T  &hrmr RALT S  &mt RCTRL TAB
 &sk LSHFT      &kp DOT       &kp FSLH       &kp APOS      &kp P          &kp Z         &kp V            &kp G          &kp M         &kp K          &kp X         &sk LSHFT
-                                            &kp ESC       &lt 1 SPACE    &ltr 0 RET    &lt 2 BACKSPACE  &lt 5 R        &kp RET
+                                            &lt 5 ESC     &lt 1 SPACE    &ltr 2 RET    &lt 3 BACKSPACE  &lt 4 R        &lt 5 RET
             >;
         };
 
@@ -152,12 +152,5 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        Func {
-            if-layers = <1 4>;
-            then-layer = <5>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
