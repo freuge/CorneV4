@@ -126,7 +126,7 @@
 &trans  &kp CARET  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp LESS_THAN    &kp GREATER_THAN  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp TILDE  &trans
 &trans  &kp MINUS  &kp ASTRK         &kp UNDER       &kp EQUAL             &kp AT           &kp POUND         &sk RSHFT              &sk RGUI         &sk RCTRL          &sk RALT   &trans
 &trans  &kp PLUS   &kp COLON         &kp SEMI        &kp SLASH             &kp PERCENT      &kp DOLLAR        &kp BSLH               &kp AMPERSAND    &kp PIPE           &kp GRAVE  &trans
-                                     &kp PERIOD      &kp N0                &kp COMMA        &trans            &trans                 &trans
+                                     &kp ESC         &kp SPACE             &kp TAB          &trans            &trans                 &trans
             >;
         };
 
@@ -143,10 +143,10 @@
 
         Function {
             bindings = <
-&trans  &kp F10  &kp F9  &kp F8  &kp F7  &kp F13    &trans  &trans     &trans    &trans     &trans    &bootloader
-&trans  &kp F11  &kp F3  &kp F2  &kp F1  &kp F14    &trans  &sk RSHFT  &sk RGUI  &sk RCTRL  &sk RALT  &sys_reset
-&trans  &kp F12  &kp F6  &kp F5  &kp F4  &kp F15    &trans  &trans     &trans    &trans     &trans    &trans
-                         &trans  &trans  &trans     &trans  &trans     &trans
+&trans  &kp F10  &kp F9  &kp F8  &kp F7  &kp F13    &trans  &kp C_VOLUME_UP  &kp C_VOL_DN  &kp K_MUTE  &bootloader     &trans
+&trans  &kp F11  &kp F3  &kp F2  &kp F1  &kp F14    &trans  &kp K_PREV       &kp K_NEXT    &kp K_PP    &sys_reset      &trans
+&trans  &kp F12  &kp F6  &kp F5  &kp F4  &kp F15    &trans  &bt BT_NXT       &bt BT_PRV    &bt BT_CLR  &bt BT_CLR_ALL  &trans
+                         &trans  &trans  &trans     &trans  &trans           &trans
             >;
 
             label = "Func";
