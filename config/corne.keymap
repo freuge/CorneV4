@@ -68,6 +68,16 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        CB {
+            bindings = <&kp RC(BACKSPACE)>;
+            key-positions = <39 40>;
+            layers = <0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
