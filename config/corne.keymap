@@ -81,10 +81,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC        &kp COMMA     &kp U          &kp O         &kp B          &kp SEMI      &kp J            &kp W          &kp L         &kp D          &kp F         &to 7
+&kp ESC        &kp COMMA     &kp U          &kp O         &kp B          &kp SEMI      &kp J            &kp W          &kp L         &kp D          &kp F         &to 0
 &mt LCTRL TAB  &hrml LALT I  &hrml LCTRL E  &hrml LGUI A  &hrml LSHFT N  &kp Q         &kp Y            &hrmr RSHFT C  &hrmr RGUI H  &hrmr RCTRL T  &hrmr RALT S  &mt RCTRL TAB
 &sk LSHFT      &kp DOT       &kp FSLH       &kp APOS      &kp P          &kp Z         &kp V            &kp G          &kp M         &kp K          &kp X         &sk LSHFT
-                                            &lt 1 ESC     &lt 2 SPACE    &ltr 0 RET    &lt 4 BACKSPACE  &lt 5 R        &lt 6 RET
+                                            &lt 1 ESC     &lt 2 SPACE    &ltr 0 RET    &lt 3 BACKSPACE  &lt 6 R        &lt 7 RET
             >;
         };
 
@@ -120,6 +120,16 @@
             >;
         };
 
+        Symbol {
+            label = "Sym";
+            bindings = <
+&trans  &kp CARET  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp LESS_THAN    &kp GREATER_THAN  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp TILDE  &trans
+&trans  &kp MINUS  &kp ASTRK         &kp UNDER       &kp EQUAL             &kp AT           &kp POUND         &sk RSHFT              &sk RGUI         &sk RCTRL          &sk RALT   &trans
+&trans  &kp PLUS   &kp COLON         &kp SEMI        &kp SLASH             &kp PERCENT      &kp DOLLAR        &kp BSLH               &kp AMPERSAND    &kp PIPE           &kp GRAVE  &trans
+                                     &kp PERIOD      &kp N0                &kp COMMA        &trans            &trans                 &trans
+            >;
+        };
+
         Numbers {
             bindings = <
 &trans  &kp PERCENT  &kp N9  &kp N8      &kp N7  &kp DOLLAR    &trans  &trans     &trans    &trans     &trans    &trans
@@ -148,17 +158,7 @@
 &kp ESC        &kp Q  &kp W  &kp E      &kp R        &kp T         &kp Y            &kp U    &kp I      &kp O    &kp P     &to 0
 &mt LCTRL TAB  &kp A  &kp S  &kp D      &kp F        &kp G         &kp H            &kp J    &kp K      &kp L    &kp SEMI  &kp APOS
 &sk LSHFT      &kp Z  &kp X  &kp C      &kp V        &kp B         &kp N            &kp M    &kp COMMA  &kp DOT  &kp FSLH  &sk LSHFT
-                             &lt 1 ESC  &lt 2 SPACE  &ltr 0 RET    &lt 4 BACKSPACE  &lt 5 R  &lt 6 RET
-            >;
-        };
-
-        Gaming {
-            display-name = "Game";
-            bindings = <
-&kp ESC        &kp Q  &kp W  &kp E      &kp R        &kp T         &kp Y            &kp U    &kp I      &kp O    &kp P     &to 0
-&mt LCTRL TAB  &kp A  &kp S  &kp D      &kp F        &kp G         &kp H            &kp J    &kp K      &kp L    &kp SEMI  &kp APOS
-&sk LSHFT      &kp Z  &kp X  &kp C      &kp V        &kp B         &kp N            &kp M    &kp COMMA  &kp DOT  &kp FSLH  &sk LSHFT
-                             &lt 1 ESC  &lt 2 SPACE  &ltr 0 RET    &lt 4 BACKSPACE  &lt 5 R  &lt 6 RET
+                             &lt 1 ESC  &lt 2 SPACE  &ltr 0 RET    &lt 3 BACKSPACE  &lt 6 R  &lt 7 RET
             >;
         };
     };
