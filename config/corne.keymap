@@ -66,6 +66,33 @@
             tapping-term-ms = <200>;
             require-prior-idle-ms = <120>;
         };
+
+        CommaQMRK: CommaQMRK {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COMMAQMRK";
+            bindings = <&kp KP_COMMA>, <&kp QUESTION>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        DotEXCL: DotEXCL {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOTEXCL";
+            bindings = <&kp KP_DOT>, <&kp EXCLAMATION>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        SlashASTRK: SlashASTRK {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SLASHASTRK";
+            bindings = <&kp KP_SLASH>, <&kp ASTRK>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     combos {
@@ -91,9 +118,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC        &kp COMMA     &kp U          &kp O         &kp B          &kp SEMI      &kp J            &kp W          &kp L         &kp D          &kp F         &to 6
+&kp ESC        &CommaQMRK    &kp U          &kp O         &kp B          &kp SEMI      &kp J            &kp W          &kp L         &kp D          &kp F         &to 6
 &mt LCTRL TAB  &hrml LALT I  &hrml LCTRL E  &hrml LGUI A  &hrml LSHFT N  &kp Q         &kp Y            &hrmr RSHFT C  &hrmr RGUI H  &hrmr RCTRL T  &hrmr RALT S  &mt RCTRL RS(TAB)
-&sk LSHFT      &kp DOT       &kp FSLH       &kp APOS      &kp P          &kp Z         &kp V            &kp G          &kp M         &kp K          &kp X         &sk LSHFT
+&sk LSHFT      &DotEXCL      &SlashASTRK    &kp APOS      &kp P          &kp Z         &kp V            &kp G          &kp M         &kp K          &kp X         &sk LSHFT
                                             &lt 5 ESC     &lt 1 SPACE    &ltr 2 RET    &lt 3 BACKSPACE  &lt 4 R        &lt 5 RET
             >;
         };
@@ -154,10 +181,10 @@
         Gaming {
             display-name = "Game";
             bindings = <
-&kp ESC        &kp Q  &kp W  &kp E   &kp R      &kp T     &kp Y          &kp U    &kp I      &kp O    &kp P     &to 0
-&mt LCTRL TAB  &kp A  &kp S  &kp D   &kp F      &kp G     &kp H          &kp J    &kp K      &kp L    &kp SEMI  &kp APOS
-&sk LSHFT      &kp Z  &kp X  &kp C   &kp V      &kp B     &kp N          &kp M    &kp COMMA  &kp DOT  &kp FSLH  &sk LSHFT
-                             &kp N1  &kp SPACE  &kp N2    &kp BACKSPACE  &kp DEL  &kp RET
+&kp TAB    &kp Q  &kp W  &kp E    &kp R      &kp T       &kp Y          &kp U    &kp I      &kp O    &kp P     &to 0
+&kp LSHFT  &kp A  &kp S  &kp D    &kp F      &kp G       &kp H          &kp J    &kp K      &kp L    &kp SEMI  &kp APOS
+&kp LCTRL  &kp Z  &kp X  &kp C    &kp V      &kp B       &kp N          &kp M    &kp COMMA  &kp DOT  &kp FSLH  &sk LSHFT
+                         &kp ESC  &kp SPACE  &kp LALT    &kp BACKSPACE  &kp DEL  &kp RET
             >;
         };
     };
