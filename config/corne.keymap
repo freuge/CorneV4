@@ -70,7 +70,7 @@
         CommaQMRK: CommaQMRK {
             compatible = "zmk,behavior-mod-morph";
             label = "COMMAQMRK";
-            bindings = <&kp KP_COMMA>, <&kp QUESTION>;
+            bindings = <&kp COMMA>, <&kp QUESTION>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -79,7 +79,7 @@
         DotEXCL: DotEXCL {
             compatible = "zmk,behavior-mod-morph";
             label = "DOTEXCL";
-            bindings = <&kp KP_DOT>, <&kp EXCLAMATION>;
+            bindings = <&kp PERIOD>, <&kp EXCLAMATION>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
