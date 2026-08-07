@@ -29,6 +29,41 @@
             bindings = <&kp LC(LEFT) &kp LS(LC(RIGHT))>;
             label = "SELECTWORD";
         };
+
+        ExclEqual: ExclEqual {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EXCL &kp EQUAL>;
+            label = "EXCLEQUAL";
+        };
+
+        LessThanOrEqualTo: LessThanOrEqualTo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LESS_THAN &kp EQUAL>;
+            label = "LESSTHANOREQUALTO";
+        };
+
+        GreaterThanOrEqualTo: GreaterThanOrEqualTo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GREATER_THAN &kp EQUAL>;
+            label = "GREATERTHANOREQUALTO";
+        };
+
+        DotBrace: DotBrack {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DOT &kp LEFT_BRACE>;
+            label = "DOTBRACK";
+        };
+
+        arrow: arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp GREATER_THAN>;
+            label = "ARROW";
+        };
     };
 
     behaviors {
@@ -98,10 +133,34 @@
     combos {
         compatible = "zmk,combos";
 
-        CB {
-            bindings = <&kp RC(BACKSPACE)>;
-            key-positions = <39 40>;
-            layers = <0>;
+        ExclEqual {
+            bindings = <&ExclEqual>;
+            key-positions = <2 3>;
+            layers = <3>;
+        };
+
+        LessThanOrEqualToo {
+            bindings = <&LessThanOrEqualTo>;
+            key-positions = <3 4>;
+            layers = <3>;
+        };
+
+        arrow {
+            bindings = <&arrow>;
+            key-positions = <15 14>;
+            layers = <3>;
+        };
+
+        DotBrace {
+            bindings = <&DotBrace>;
+            key-positions = <15 16>;
+            layers = <3>;
+        };
+
+        GreaterThanOrEqualTo {
+            bindings = <&GreaterThanOrEqualTo>;
+            key-positions = <8 7>;
+            layers = <3>;
         };
     };
 
