@@ -119,10 +119,10 @@
 
         Navigation {
             bindings = <
-&trans  &trans  &kp LCTRL  &kp LALT  &kp LCTRL  &trans    &kp RC(Y)  &kp RC(V)      &kp RC(C)     &kp RC(X)  &kp RC(Z)  &trans
-&trans  &trans  &trans     &kp LGUI  &kp LSHFT  &trans    &kp LEFT   &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp RC(A)  &trans
-&trans  &trans  &trans     &trans    &trans     &trans    &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &kp RC(F)  &trans
-                           &trans    &trans     &trans    &kp BSPC   &kp DEL        &kp RET
+&trans  &trans    &trans     &trans    &trans     &trans    &kp RC(Y)  &kp RC(V)      &kp RC(C)     &kp RC(X)  &kp RC(Z)  &trans
+&trans  &kp LALT  &kp LCTRL  &kp LGUI  &kp LSHFT  &trans    &kp LEFT   &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp RC(A)  &trans
+&trans  &trans    &trans     &trans    &trans     &trans    &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &kp RC(F)  &trans
+                             &trans    &trans     &trans    &kp BSPC   &kp DEL        &kp RET
             >;
 
             label = "Nav";
